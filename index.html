@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ai Chatbot Class 2</title>
+</head>
+<body>
+    <h1>Assignment No 01</h1>
+    <input type="number" id="num1"> 
+    <br>
+    <input type="number" id="num2">
+    <br><br>
+    <button onClick ="myfunction()">Do Addition</button> 
+    <br><br>
+    <button onclick = "myfunction1()">Do Subraction</button>
+    <br><br>
+    <button onclick = "myfunction2()">Do Multiplication</button>
+    <br><br>
+    <button onclick = "myfunction3()">Do Division</button>
+
+    <script>
+        // For Addition
+        function myfunction() {    
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+
+        let result = Number(num1) + Number(num2);
+        console.log("Addition result : ",result)
+    } 
+        // For Subraction
+        function myfunction1() {
+            let num1 = document.getElementById("num1").value;
+            let num2 = document.getElementById("num2").value;
+
+            let result= Number(num1) - Number(num2);
+            console.log("Subtraction result:", result)
+        }
+        // For Multiplication
+        function myfunction2() {    
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+
+        let result = Number(num1) * Number(num2);
+        console.log("Multiplication result : ",result)
+    } 
+        // For division
+        function myfunction3() {    
+        let num1 = document.getElementById("num1").value;
+        let num2 = document.getElementById("num2").value;
+
+        let result = Number(num1) / Number(num2);
+        console.log("division result : ",result);
+    } 
+    
+    </script>
+</body>
+</html>
